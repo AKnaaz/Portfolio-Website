@@ -1,18 +1,38 @@
 import React from 'react';
-import logo from '../../assets/portfolio-logo.jpg';
+import logo from "../../assets/logo2.png"
 
 const Navbar = () => {
     return (
-        <div className='flex items-center justify-between my-5 mx-[170px]'>
-            <img src={logo} alt="portfolio-logo" className='w-10 h-10 rounded-full'/>
-            <ul className="font flex items-center gap-8 text-[15px]">
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-            <button className='btn rounded-[50px] px-6 py-2 bg-[linear-gradient(267deg,#DA7C25_0.36%,#B923E1_102.06%)] transition-transform duration-500 hover:scale-105'>Resume</button>
+        <div className="navbar shadow-sm md:px-20">
+            <div className="navbar-start">
+                <div className="dropdown">
+                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                    tabIndex={0}
+                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font">
+                    <li><a>Home</a></li>
+                    <li><a>About Me</a></li>
+                    <li><a>Skills</a></li>
+                    <li><a>Projects</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+                </div>
+                <img src={logo} alt="" className='w-10 h-10 rounded-full'/>
+            </div>
+            <div className="navbar-center hidden lg:flex font">
+                <ul className="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About Me</a></li>
+                <li><a>Skills</a></li>
+                <li><a>Projects</a></li>
+                <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div className="navbar-end">
+               <a className="btn bg-pink-600 text-white rounded-[60px] transition-transform duration-500 hover:scale-105">Resume</a>
+            </div>
         </div>
     );
 };
