@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../assets/nazat.png"
+import logo from "../../assets/logo.png"
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Navbar = () => {
@@ -22,14 +22,9 @@ const Navbar = () => {
                 <li><AnchorLink className='anchor-link' offset={50} href='#projects'><a>Projects</a></AnchorLink></li>
 
                 <li><AnchorLink  className='anchor-link' offset={50} href='#contact'><a>Contact</a></AnchorLink></li>
-                    {/* <li><a>Home</a></li>
-                    <li><a>About Me</a></li>
-                    <li><a>Skills</a></li>
-                    <li><a>Projects</a></li>
-                    <li><a>Contact Me</a></li> */}
                 </ul>
                 </div>
-                <img src={logo} alt="" className='w-20 h-10'/>
+                <img src={logo} alt="" className='w-15 h-7 md:w-20 lg:h-7'/>
             </div>
             <div className="navbar-center hidden lg:flex font">
                 <ul className="menu menu-horizontal px-1">
