@@ -5,7 +5,7 @@ import { FaGithub, FaSquareTwitter } from 'react-icons/fa6';
 
 const Hero = () => {
     return (
-        <div className='w-full flex flex-col items-center gap-6 px-6 md:px-10 lg:px-20'>
+        <div id='hero' className='w-full flex flex-col items-center gap-6 px-6 md:px-10 lg:px-20'>
 
             <img 
                 src={profile_pic} 

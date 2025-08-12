@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../../assets/nazat.png"
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Navbar = () => {
     return (
@@ -23,11 +24,15 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex font">
                 <ul className="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About Me</a></li>
-                <li><a>Skills</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Contact</a></li>
+                <li><AnchorLink className='anchor-link' href='#home'><a>Home</a></AnchorLink></li>
+
+                <li><AnchorLink className='anchor-link' offset={50} href='#about'><a>About Me</a></AnchorLink></li>
+
+                <li><AnchorLink className='anchor-link' offset={50} href='#skills'><a>Skills</a></AnchorLink></li>
+
+                <li><AnchorLink className='anchor-link' offset={50} href='#projects'><a>Projects</a></AnchorLink></li>
+
+                <li><AnchorLink  className='anchor-link' offset={50} href='#contact'><a>Contact</a></AnchorLink></li>
                 </ul>
             </div>
             <div className="navbar-end">
