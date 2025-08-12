@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Navbar = () => {
     return (
-        <div className="navbar shadow-sm md:px-20">
+        <div className="navbar shadow-sm md:px-20 sticky top-0 z-50 bg-white">
             <div className="navbar-start">
                 <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -13,11 +13,20 @@ const Navbar = () => {
                 <ul
                     tabIndex={0}
                     className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font">
-                    <li><a>Home</a></li>
+                        <li><AnchorLink className='anchor-link' href='#home'><a>Home</a></AnchorLink></li>
+
+                <li><AnchorLink className='anchor-link' offset={50} href='#about'><a>About Me</a></AnchorLink></li>
+
+                <li><AnchorLink className='anchor-link' offset={50} href='#skills'><a>Skills</a></AnchorLink></li>
+
+                <li><AnchorLink className='anchor-link' offset={50} href='#projects'><a>Projects</a></AnchorLink></li>
+
+                <li><AnchorLink  className='anchor-link' offset={50} href='#contact'><a>Contact</a></AnchorLink></li>
+                    {/* <li><a>Home</a></li>
                     <li><a>About Me</a></li>
                     <li><a>Skills</a></li>
                     <li><a>Projects</a></li>
-                    <li><a>Contact Me</a></li>
+                    <li><a>Contact Me</a></li> */}
                 </ul>
                 </div>
                 <img src={logo} alt="" className='w-20 h-10'/>
