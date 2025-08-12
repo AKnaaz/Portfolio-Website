@@ -39,7 +39,7 @@ const itemVariants = {
 
 const Skills = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-16">
+    <section className="w-full px-4 md:px-20 py-16">
       <h2 className="text-3xl font-bold text-center mb-8 text-pink-600">My Skills</h2>
       
       <motion.div 

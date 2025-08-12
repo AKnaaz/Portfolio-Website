@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-8 py-16">
-      <div className="max-w-screen-lg mx-auto bg-white rounded-lg shadow-lg text-gray-900 p-6 sm:p-10">
+    <section className="px-4 py-16 md:px-20">
+      <div className="w-full rounded-lg shadow-lg text-gray-900 p-6 md:px-16">
         
         <h1 className="text-3xl sm:text-4xl font-bold text-center text-pink-600 mb-8">
           About Me

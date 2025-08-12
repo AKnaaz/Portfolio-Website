@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../assets/logo2.png"
+import logo from "../../assets/nazat.png"
 
 const Navbar = () => {
     return (
@@ -16,10 +16,10 @@ const Navbar = () => {
                     <li><a>About Me</a></li>
                     <li><a>Skills</a></li>
                     <li><a>Projects</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a>Contact Me</a></li>
                 </ul>
                 </div>
-                <img src={logo} alt="" className='w-10 h-10 rounded-full'/>
+                <img src={logo} alt="" className='w-20 h-10'/>
             </div>
             <div className="navbar-center hidden lg:flex font">
                 <ul className="menu menu-horizontal px-1">
